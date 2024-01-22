@@ -1,5 +1,6 @@
 <template>
   <div>
+    <b-breadcrumb class="mt-2" :items="items1"></b-breadcrumb>
     <h1>AQUI ES VUELOS DISPONIBLES</h1>
     <b-breadcrumb :items="items"></b-breadcrumb>
     <b-link :to="{ name: 'lineasdevuelo' }">Siguiente</b-link>
@@ -12,20 +13,25 @@ export default {
     return {
       items: [
         {
-          text: 'Admin',
-          href: '#'
-        },
-        {
-          text: 'Manage',
-          href: '#'
-        },
-        {
-          text: 'Library',
-          active: true
-        },
-        {
           href: "#",
           to: { name: "lineasdevuelo" },
+        },
+      ],
+      items1: [
+        {
+          text: "Reservas de Vuelo",
+          to: { name: "reservasvuelo" },
+        },
+        {
+          text: "Vuelos Disponibles",
+          to: { name: "vuelosdisponibles" },
+        },
+        {
+          text: "Vuelos Cancelados",
+          to: { name: "vueloscancelados" },
+        },
+        {
+          active: true,
         },
       ],
     };
@@ -33,4 +39,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>
