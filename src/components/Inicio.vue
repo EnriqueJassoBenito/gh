@@ -2,7 +2,7 @@
   <div>
     <b-container fluid class="bv-example-row">
       <b-row>
-        <b-col class="bg-light">
+        <b-col class="bg-light ">
           <div>
             <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
               <b-navbar-brand href="#">
@@ -42,12 +42,9 @@
               <div class="px-3 py-2">
                 <nav class="mb-3 mt-5">
                   <b-nav vertical>
-                    <b-nav-item :to="{name: 'vuelosdisponibles'}">Inicio</b-nav-item>
-                    <b-nav-item>Main</b-nav-item>
-                    <b-nav-item>Tercero</b-nav-item>
-                    <!-- <b-nav-item :to="{name: 'reservasvuelo'}">Reservas de Vuelo</b-nav-item>
-                    <b-nav-item :to="{name: 'vuelosdisponibles'}">Vuelos Disponibles</b-nav-item>
-                    <b-nav-item :to="{name: 'vueloscancelados'}">Vuelos cancelado</b-nav-item> -->
+                    <b-nav-item :to="{name: 'iniciolandage'}">Inicio</b-nav-item>
+                    <b-nav-item :to="{name: 'main'}">Main</b-nav-item>
+                    <b-nav-item :to="{name: 'tercero'}">Tercero</b-nav-item>
                   </b-nav>
                 </nav>
                 <p>
@@ -56,7 +53,7 @@
                   revienta! Jajajaja
                 </p>
                 <b-img
-                  src="../../src/assets/img/hi.jpg"
+                  src="https://i.pinimg.com/564x/0f/cf/24/0fcf24900f13e205ca5d15c62980fc5f.jpg"
                   fluid
                   thumbnail
                 ></b-img>

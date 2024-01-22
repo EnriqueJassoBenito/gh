@@ -1,9 +1,9 @@
 <script setup>
-import InicioLandpage from './components/Inicio.vue';
+// import InicioLandpage from './components/Inicio.vue';
 </script>
 
 <template>
   <div id="app">
-    <InicioLandpage/>
+    <router-view/>
   </div>
 </template>
